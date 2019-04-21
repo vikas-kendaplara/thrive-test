@@ -91,7 +91,6 @@
     left: 5%;
     bottom: 0;
     right: 0;
-    z-index: 9999;
 }
 .banner-text{
     display: flex;
@@ -108,6 +107,12 @@
     font-family: opensansbolditalic;
     font-size:65px;
     color: #E8B609;
+    margin-bottom: 0;
+}
+.banner_text_title_white{
+    font-family: opensansbolditalic;
+    font-size:65px;
+    color: #FFFFFF;
     margin-bottom: 0;
 }
 .banner_text_desc{
@@ -235,6 +240,7 @@
     }
     .navbar-toggle{
         background-color: #fff;
+        margin-right: 30px;
     }
     .thrive_navbar #myNavbar ul{
         padding-left: 10px;
@@ -252,6 +258,9 @@
         font-size: 13px;
     }
     .banner_text_title {
+        font-size: 44px;
+    }
+    .banner_text_title_white {
         font-size: 44px;
     }
     .thrive_banner .home_banner .home_banner_img {
