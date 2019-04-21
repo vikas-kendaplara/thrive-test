@@ -1,0 +1,324 @@
+@font-face {
+    font-family: popinsregular;
+    src: url('../fonts/Poppins/Poppins-Regular.ttf');
+}
+@font-face {
+    font-family: popinsmedium;
+    src: url('../fonts/Poppins/Poppins-Medium.ttf');
+}
+@font-face {
+    font-family: popinssemibold;
+    src: url('../fonts/Poppins/Poppins-SemiBold.ttf');
+}
+@font-face {
+    font-family: opensansregular;
+    src: url('../fonts/Open_Sans/OpenSans-Regular.ttf');
+}
+@font-face {
+    font-family: opensansbolditalic;
+    src: url('../fonts/Open_Sans/OpenSans-BoldItalic.ttf');
+}
+@font-face {
+    font-family: opensansemibold;
+    src: url('../fonts/Open_Sans/OpenSans-SemiBold.ttf');
+}
+
+.bg_yellow{
+    background-color:#E8B609 !important;
+}
+.bg_lightblue{
+    background-color: #0070B6 !important;
+}
+.thrive_navbar{
+    background: #011334;
+    height: 80px;
+    box-shadow: 0 1px 4px 0;
+    margin-bottom: 0px;
+    opacity: 0.9;
+}
+.thrive_navbar .container{
+    margin: 10px auto;
+}
+.thrive_navbar #myNavbar{
+    margin: 10px;
+}
+.thrive_navbar #myNavbar ul li a{
+    color: #fff;
+    font-size: 16px;
+    text-align: left;
+    font-family: popinsregular;
+    margin: 15px;
+    padding: 0;
+}
+.thrive_navbar #myNavbar .navbar-right li{
+    margin: 10px 0;
+}
+.thrive_navbar #myNavbar .navbar-right li a{
+    padding: 5px;
+    border: 2px solid #E8B609;
+    border-radius: 49px;
+    width: 130px;
+    height: 35px;
+    text-align: center;
+    margin: 0px;
+}
+.thrive_navbar #myNavbar ul li a:hover{
+    text-decoration: none;
+    background-color: unset;
+    border-bottom: 1px solid #E8B609;
+}
+.thrive_navbar #myNavbar .thrive_left_nav{
+    margin: 0 16%;
+}
+
+.thrive_navbar #myNavbar .navbar-right li a:hover{
+    border-bottom:unset;
+    border: 2px solid #E8B609;
+}
+
+.thrive_banner,.thrive_about{
+    margin-right: unset;
+}
+.thrive_banner .home_banner .home_banner_img{
+    height: 657px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.thrive_banner .home_banner .home_banner_container{
+    position: absolute;
+    top: 35%;
+    left: 5%;
+    bottom: 0;
+    right: 0;
+    z-index: 9999;
+}
+.banner-text{
+    display: flex;
+}
+.banner-text img{
+    margin-right: 10px;
+}
+.banner-text p{
+    font-family: opensansregular;
+    color: #FFFFFF;
+    font-size: 20px;
+}
+.banner_text_title{
+    font-family: opensansbolditalic;
+    font-size:65px;
+    color: #E8B609;
+    margin-bottom: 0;
+}
+.banner_text_desc{
+    font-family: opensansregular;
+    color:#FFFFFF;
+    font-size: 18px;
+}
+.banner_know_more{
+    width: 121px;
+    height: 32px;
+    border: 2px solid #E8B609;
+    background: #E8B609;
+    border-radius: 21px;
+    color: #011929;
+    font-family: opensansemibold;
+    text-align: center;
+    padding: 5px;
+}
+.thrive_about .thrive_about_desc{
+    margin: 5% auto;
+}
+.thrive_about .thrive_about_desc .thrive_about_desc_list1{
+    font-size: 20px;
+    font-family: popinsregular;
+    text-align: left; 
+    border-bottom: 1px solid #9B9A9A;
+    padding-bottom: 20px;
+}
+.thrive_about .thrive_about_desc .thrive_about_desc_list{
+    color: #9B9A9A;
+    font-size: 19px;
+    text-align: left;
+    font-family: popinsregular;
+    border-bottom: 1px solid #9B9A9A;
+    padding: 15px 0;
+    margin: 0;
+}
+.thrive_about .thrive_about_desc .thrive_about_desc_list span{
+    color: #011334;
+    font-size: 19px;
+    font-family: popinssemibold;
+}
+.thrive_about .thrive_about_title{
+    margin: 10% auto;
+}
+
+.thrive_about .thrive_about_title p{
+    font-family: popinsmedium;
+    font-size: 18px;
+    color: #9B9A9A;
+}
+.thrive_about .thrive_about_title h5{
+    font-family: popinsmedium;
+    font-size: 35px;
+    color: #011334;
+    width: 411px;
+}
+.thrive_img_desc{
+    background-color: #011334;
+    opacity: 0.9;
+    margin-top: -80px;
+    height: 80px;
+    text-align: center;
+    padding: 10px 0;
+}
+.thrive_img_desc p:first-child{
+    font-family: popinssemibold;
+    color: #ffffff;
+    font-size: 18px;
+}
+.thrive_img_desc p:last-child{
+    font-size: 15px;
+    font-family: popinsregular;
+    color: #ffffff;
+}
+.thrive_amenities{
+    margin: 5% auto;
+}
+.thrive_amenities .thrive_amenities_title{
+    font-family: popinsmedium;
+    font-size: 35px;
+    color: #011334;
+    text-align: center;
+}
+.thrive_amenities .thrive_amenities_logo{
+    margin: 0 auto;
+}
+.thrive_amenities .thrive_amenities_desc{
+    font-family: popinsregular;
+    font-size: 20px;
+    color: #9B9A9A;
+    text-align: center;
+    margin-top: 2%;
+}
+.thrive_amenities_icon{
+    width: 122px;
+    height: 122px;
+    border-radius: 50%;
+    border: 1px solid #F9F0D0;
+    background: #F9F0D0;
+    margin: 0 auto;
+}
+.thrive_amenities_icon img{
+    margin: 0 auto;
+    padding: 30px 0;
+}
+.thrive_amenities .thrive_amenities_icon_title{
+    font-family: popinsmedium;
+    font-size: 18px;
+    color: #011334;
+    text-align: center;
+    margin-top: 3%;
+}
+@media (max-width:767px){
+    .navbar-collapse{
+        background: #011334;
+    }
+    .thrive_navbar #myNavbar {
+        margin: unset;
+        margin-right: -15px;
+        margin-left: -15px;
+    }
+    .navbar-toggle .icon-bar{
+        background-color: #011334;
+    }
+    .navbar-toggle{
+        background-color: #fff;
+    }
+    .thrive_navbar #myNavbar ul{
+        padding-left: 10px;
+    }
+    .thrive_navbar #myNavbar .navbar-right{
+        padding-left: 20px;
+    }
+    .navbar-brand{
+        padding: 10px 15px;
+    }
+    .thrive_navbar #myNavbar .thrive_left_nav {
+        margin: 0;
+    }
+    .banner-text p {
+        font-size: 13px;
+    }
+    .banner_text_title {
+        font-size: 44px;
+    }
+    .thrive_banner .home_banner .home_banner_img {
+        height: 350px;
+    }
+    .thrive_banner .home_banner .home_banner_container {
+        top: 25%;
+    }
+    .thrive_img{
+        margin: 5% 0;
+    }
+    .thrive_img img{
+        width: 100%;
+    }
+    .thrive_amenities .thrive_amenities_icon_title {
+        font-family: popinsmedium;
+        font-size: 12px;
+    }
+    .thrive_navbar{
+        z-index: 9999999;
+    }
+    .thrive_banner, .thrive_about{
+        margin-right: -15px;
+    }
+    .thrive_about .thrive_about_title h5{
+        width:unset;
+    }
+}
+@media (max-width:768px){
+    .thrive_navbar #myNavbar .navbar-right li a {
+        width: 124px;
+    }
+}
+@media (max-width:1023px) and (min-width:768px){
+    .thrive_navbar #myNavbar .thrive_left_nav {
+        margin: 0%;
+    }
+    .thrive_navbar #myNavbar .navbar-right li a {
+        width: 124px;
+    }
+    .thrive_banner .home_banner .home_banner_img{
+        height: auto;
+    }
+    .thrive_banner .home_banner .home_banner_container {
+        top: 25%;
+        left: 0;
+    }
+    .thrive_img_desc p:last-child {
+        font-size: 12px;
+    }
+    .thrive_img_desc p:first-child {
+        font-family: popinssemibold;
+        color: #ffffff;
+        font-size: 16px;
+    }
+    .thrive_amenities .thrive_amenities_icon_title {
+        font-size: 13px;
+    }
+    .thrive_navbar #myNavbar ul li a {
+        margin: 15px 10px;
+    }
+}
+@media (max-width:1200px) and (min-width:1024px){
+    .thrive_navbar #myNavbar .thrive_left_nav {
+        margin: 0 8%;
+    }
+    .thrive_img_desc p:last-child {
+        font-size: 16px;
+    }
+}
