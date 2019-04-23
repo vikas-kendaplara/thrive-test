@@ -450,6 +450,7 @@ html,body{
     }
     .thrive_footer_list {
         font-size: 16px;
+        padding-left: 24px;
     }
     .thrive_footer_list li {
         padding:0 5px !important;
@@ -593,8 +594,7 @@ html,body{
         padding: 0 4px !important;
     }
     .thrive_footer_list {
-        font-size: 12px;
-        padding-left: 8px;
+        font-size: 11px;
     }
     .footer_social_media .outer-line {
         width: 11% !important;
