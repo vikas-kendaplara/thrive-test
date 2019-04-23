@@ -22,7 +22,9 @@
     font-family: opensansemibold;
     src: url('../fonts/Open_Sans/OpenSans-SemiBold.ttf');
 }
-
+html,body{
+    scroll-behavior: smooth;
+}
 .bg_yellow{
     background-color:#E8B609 !important;
 }
@@ -35,6 +37,7 @@
     box-shadow: 0 1px 4px 0;
     margin-bottom: 0px;
     opacity: 0.9;
+    z-index: 99999;
 }
 .thrive_navbar .container{
     margin: 10px auto;
@@ -62,16 +65,24 @@
     text-align: center;
     margin: 0px;
 }
-.thrive_navbar #myNavbar ul li a:hover{
+.thrive_navbar #myNavbar ul li a:hover,.thrive_navbar #myNavbar ul li a:focus{
     text-decoration: none;
     background-color: unset;
     border-bottom: 1px solid #E8B609;
+}
+.thrive_footer_list > li a:hover,.thrive_footer_list > li a:focus{
+    text-decoration: none;
+    background-color: unset;
+    border-bottom: 1px solid #E8B609;
+}
+.thrive_footer_list > li a{
+    color: #C9C6C6;
 }
 .thrive_navbar #myNavbar .thrive_left_nav{
     margin: 0 16%;
 }
 
-.thrive_navbar #myNavbar .navbar-right li a:hover{
+.thrive_navbar #myNavbar .navbar-right li a:hover,.thrive_navbar #myNavbar .navbar-right li a:focus{
     border-bottom:unset;
     border: 2px solid #E8B609;
 }
@@ -91,6 +102,7 @@
     left: 5%;
     bottom: 0;
     right: 0;
+    z-index: 9999;
 }
 .banner-text{
     display: flex;
@@ -109,11 +121,8 @@
     color: #E8B609;
     margin-bottom: 0;
 }
-.banner_text_title_white{
-    font-family: opensansbolditalic;
-    font-size:65px;
+.banner_text_title span{
     color: #FFFFFF;
-    margin-bottom: 0;
 }
 .banner_text_desc{
     font-family: opensansregular;
@@ -140,6 +149,7 @@
     text-align: left; 
     border-bottom: 1px solid #9B9A9A;
     padding-bottom: 20px;
+    margin-bottom: 15px;
 }
 .thrive_about .thrive_about_desc .thrive_about_desc_list{
     color: #9B9A9A;
@@ -215,6 +225,9 @@
     background: #F9F0D0;
     margin: 0 auto;
 }
+.thrive_amenities_icon:hover{
+    background: #E8B609;
+}
 .thrive_amenities_icon img{
     margin: 0 auto;
     padding: 30px 0;
@@ -225,6 +238,153 @@
     color: #011334;
     text-align: center;
     margin-top: 3%;
+}
+.thrive_our_price p{
+    font-family: popinsmedium;
+    font-size: 35px;
+    color: #011334;
+    text-align: center;
+}
+.thrive_our_price .thrive_amenities_logo{
+    margin: 0 auto;
+}
+.thrive_our_price_tag{
+    border: 2px solid#C9B3B3;
+    padding: 0;
+    width: 360px;
+    margin-right: 10px;
+    height: 744px;
+}
+.thrive_our_price_tag .thrive_our_price_tag_img{
+    height: 248px;
+    background-color: #C9B3B3;
+    margin: 0;
+}
+.thrive_our_price_tag .thrive_our_price_tag_title{
+    height: 60px;
+    background-color: #E8E3E3;
+}
+.thrive_our_price_tag .thrive_our_price_tag_title p{
+    font-size: 18px;
+    color: #011334;
+    font-family: popinssemibold;
+    margin: 0;
+    padding: 17px;
+}
+.thrive_our_price_tag .thrive_our_price_tag_desc{
+    color: #011334;
+    font-size: 16px;
+    font-family: popinsregular;
+    padding: 15px;
+    text-align: left;
+}
+.thrive_our_price_tag .thrive_our_price_tag_list{
+    list-style: none;
+    padding: 0 15px;
+}
+.thrive_our_price_tag .thrive_our_price_tag_list li{
+    color: #011334;
+    font-family: popinsregular;
+    font-size: 16px;
+}
+.thrive_our_price_tag .thrive_our_price_tag_list li::before{
+    content: "•";
+    color: #E8B609;
+    font-size: 40px;
+    padding-right: 5px;
+    vertical-align: middle;
+    line-height: 0.7;
+}
+.thrive_our_price_tag_learn{
+    margin-bottom: 25%;
+}
+.thrive_our_price_tag_learn a{
+    color: #011334;
+    font-size: 14px;
+    font-family: popinsmedium;
+    padding: 3px;
+    background-color: #E8B609;
+    margin-left: 17px;
+}
+.thrive_caraousel{
+    margin: 5% 0;
+}
+.thrive_caraousel .item img{
+    height: 450px;
+    object-fit: cover;
+    object-position: center;
+}
+.thrive_caraousel .thrive_amenities_logo{
+    margin-bottom: 5%;
+}
+.thrive_contact_us{
+    background-image: url(../img/h3_bkg_connect.png);
+    height: 550px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: unset;
+}
+.thrive_contact_us img{
+    margin: 0 auto;
+    padding: 20px 0;
+}
+.thrive_contact_us .thrive_contact_us_title{
+    color:#FFFFFF;
+    font-size:35px;
+    font-family: popinsmedium;
+}
+.thrive_contact_us_address{
+    color: #FFFFFF;
+    font-size: 25px;
+    font-family: popinsmedium;
+    border: 2px solid #d1a70e;
+    padding: 27.5px;
+}
+.thrive_contact_us .thrive_contact_us_desc{
+    color: #FFFFFF;
+    font-size: 14px;
+    font-family: popinsregular;
+}
+.ContactUs_top{
+    top:20px;
+}
+.thrive_footer{
+    background-color: #011334;
+    margin-right: unset;
+}
+.thrive_footer .thrive_footer_logo{
+    padding: 100px 0 40px 0;
+}
+.thrive_footer .thrive_footer_logo img{
+    margin: 0 auto;
+}
+.thrive_footer_list{
+    display: flex;
+    list-style: none;
+    color: #C9C6C6;
+    font-size: 20px;
+    font-family: popinssemibold;
+}
+.thrive_footer_list li{
+    padding: 0 70px;
+}
+.thrive_copyright{
+    color: #DBDBDB;
+    font-size: 15px;
+    font-family: popinsregular;
+    text-align: center;
+    padding: 50px 0 100px 0;
+}
+.btn-info,.btn-info:hover{
+    width: 100%;
+    background-color: #E8B609;
+    border-color: #E8B609;
+    color: #011929;
+    font-family: popinssemibold;
+}
+.thrive_contact_form{
+    background-color: #011929;
+    padding: 15px;
 }
 @media (max-width:767px){
     .navbar-collapse{
@@ -240,7 +400,6 @@
     }
     .navbar-toggle{
         background-color: #fff;
-        margin-right: 25px;
     }
     .thrive_navbar #myNavbar ul{
         padding-left: 10px;
@@ -260,14 +419,11 @@
     .banner_text_title {
         font-size: 44px;
     }
-    .banner_text_title_white {
-        font-size: 44px;
-    }
     .thrive_banner .home_banner .home_banner_img {
         height: 350px;
     }
     .thrive_banner .home_banner .home_banner_container {
-        top: 17%;
+        top: 25%;
     }
     .thrive_img{
         margin: 5% 0;
@@ -287,6 +443,37 @@
     }
     .thrive_about .thrive_about_title h5{
         width:unset;
+    }
+    .thrive_our_price_tag{
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    .thrive_footer_list {
+        font-size: 16px;
+    }
+    .thrive_footer_list li {
+        padding:0 5px !important;
+    }
+    .footer_social_media .outer-line {
+        width: 17% !important;
+    }
+    .thrive_contact_us{
+        background-image: url(../img/h3_bkg_connect.png);
+        height: 880px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-right: -15px;
+    }
+    .thrive_contact_us_address{
+        color: #FFFFFF;
+        font-size: 23px;
+        font-family: popinsmedium;
+        border: 2px solid #d1a70e;
+        padding: 27.5px;
+        text-align: center;
+    }
+    .thrive_footer{
+        margin-right: -15px;
     }
 }
 @media (max-width:768px){
@@ -317,11 +504,41 @@
         font-size: 16px;
     }
     .thrive_amenities .thrive_amenities_icon_title {
-        font-size: 13px;
+        font-size: 12px;
     }
     .thrive_navbar #myNavbar ul li a {
         margin: 15px 10px;
     }
+    .thrive_our_price_tag{
+        width: 220px;
+    }
+    .thrive_our_price_tag .thrive_our_price_tag_title p {
+        padding: 13px;
+        font-size: 12px;
+    }
+    .thrive_our_price_tag .thrive_our_price_tag_list li{
+        font-size: 12px;
+    }
+    .thrive_our_price_tag .thrive_our_price_tag_list{
+        padding: 0 8px;
+    }
+    .thrive_our_price_tag .thrive_our_price_tag_desc{
+        padding: 8px;
+    }
+    .thrive_footer_list li {
+        padding: 0px 28px !important;
+    }
+    .footer_social_media .outer-line {
+        width: 33% !important;
+    }
+    .thrive_contact_us_address{
+        color: #FFFFFF;
+        font-size: 25px;
+        font-family: popinsmedium;
+        border: 2px solid #d1a70e;
+        padding: 27.5px;
+    }
+    
 }
 @media (max-width:1200px) and (min-width:1024px){
     .thrive_navbar #myNavbar .thrive_left_nav {
@@ -330,4 +547,82 @@
     .thrive_img_desc p:last-child {
         font-size: 16px;
     }
+    .thrive_our_price_tag{
+        width: 293px;
+    }
+    .thrive_our_price_tag .thrive_our_price_tag_title p {
+        font-size: 16px
+    }
+    .footer_social_media .outer-line {
+        width: 37% !important;
+    }
+    .thrive_footer_list li {
+        padding: 0px 50px;
+    }
+    .thrive_amenities .thrive_amenities_icon_title {
+        font-size: 17px;
+    }
+    .owl-carousel.owl-loaded{
+        margin: 0 3%;
+    }
+    .title_center{
+        margin-left: 85px;
+    }
+}
+@media (max-width:1280px) and (min-width:1200px){
+    .thrive_footer,.thrive_contact_us{
+        margin-right:-15px;
+    }
+    .thrive_footer_list li {
+        padding: 0px 50px;
+    }
+    .title_center{
+        margin-left: 55px;
+    }
+}
+@media (min-width:1360px){
+    .owl-carousel.owl-loaded{
+        margin: 0 9%;
+    }
+    .title_center{
+        margin-left: 200px;
+    }
+}
+@media(max-width:370px){
+    .thrive_footer_list li {
+        padding: 0 4px !important;
+    }
+    .thrive_footer_list {
+        font-size: 12px;
+    }
+    .footer_social_media .outer-line {
+        width: 11% !important;
+    }
+    .thrive_contact_us{
+        background-image: url(../img/h3_bkg_connect.png);
+        height: 900px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-right: -15px;
+    }
+}
+
+.footer_social_media{
+    text-align: center;
+    margin: 5% 0 0;
+}
+  
+.footer_social_media span {
+    display: inline-block;
+    vertical-align: middle;
+}
+  
+.footer_social_media .outer-line {
+    width: 39%;
+    border-bottom: 1px solid #C9C6C6;
+}
+.footer_social_media i{
+    color: #A79F9F;
+    font-size: 20px;
+    padding: 0 20px;
 }
