@@ -593,7 +593,8 @@ html,body{
         padding: 0 4px !important;
     }
     .thrive_footer_list {
-        font-size: 11px;
+        font-size: 12px;
+        padding-left: 13px;
     }
     .footer_social_media .outer-line {
         width: 11% !important;
