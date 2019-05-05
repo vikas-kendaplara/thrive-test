@@ -15,7 +15,7 @@
     <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
     <!-- <link href="css/docs.theme.min.css" rel="stylesheet"> -->
   </head>
-  <body>
+  <body onload="showMsg();">
     <header>
         <nav class="navbar navbar-fixed-top thrive_navbar">
             <div class="container">
@@ -26,7 +26,7 @@
                     <span class="icon-bar"></span> 
                 </button>
                 <a class="navbar-brand" href="#">
-                    <img src="img/Final_logo1.png" class="img-responsive" alt="thrive">
+                    <img src="img/Final_logo2.png" class="img-responsive" alt="thrive">
                 </a>
                 </div>
                 <div class="collapse navbar-collapse" id="myNavbar">
@@ -38,7 +38,7 @@
                         <li><a href="#thrive_gallery">Gallery</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#thrive_contact_us">Contact us</a></li>
+                        <li><a href="#thrive_contact_us">Schedule a Visit</a></li>
                     </ul>
                 </div>
             </div>
@@ -48,13 +48,15 @@
         <div class="home_banner">
             <img src="img/Home-Banner.png" class="img-responsive home_banner_img" alt="thrive">
             <div class="container home_banner_container">
-                <div class="banner-text">
-                    <img src="img/1.png" class="img-responsive" alt="thrive">
-                    <p>Probably the best creative space in the city</p>
+                <div class="blue_back">
+                    <div class="banner-text">
+                        <img src="img/1.png" class="img-responsive" alt="thrive">
+                        <span>The best creative space in the city</span>
+                    </div>
+                    <p class="banner_text_title"><span>Creative</span> Space</p>
+                    <p class="banner_text_desc">Whether it's working for yourself, or remotely,<br> its great to be independent</p>
+                    <!--<p class="banner_know_more">Know more</p>-->
                 </div>
-                <p class="banner_text_title"><span>Creative</span> Space</p>
-                <p class="banner_text_desc">Whether it's working for yourself, or remotely,<br> its great to be independent</p>
-                <p class="banner_know_more">Know more</p>
             </div>
         </div>
     </div>
@@ -239,31 +241,32 @@
             <!--<p  class="text-center thrive_contact_us_desc">Subscribe to our e-mail list and stay up-to-date with all our news</p>-->
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ContactUs_top">
                 <div class="col-md-6 col-sm-6 col-xs-12 col-lg-6 thrive_contact_form">
-                    <form>
+                    <p class="thrive_contact_us_address">Office Location<br><br>IMG Tower,<br> # 18, 80 feet Road,<br> 4th Block,<br>Koramangala,<br>Bengaluru - 560 034</p>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-12 col-lg-6 thrive_contact_form">
+                    <form action="" method="post">
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Name*">
+                            <input type="text" class="form-control" name="uname" placeholder="Name*" required>
                         </div>
                         <div class="form-group">
-                            <input type="email" class="form-control" placeholder="Email*">
+                            <input type="email" class="form-control" name="email" placeholder="Email*" required>
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Mobile Number*">
+                            <input type="text" class="form-control" name="mobileno" placeholder="Mobile Number*" required>
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Subject*">
+                            <input type="text" class="form-control" name="subject" placeholder="Subject*" required>
                         </div>
                         <div class="form-group">
-                            <textarea class="form-control" placeholder="Message*"></textarea>
+                            <textarea class="form-control" name="msg" placeholder="Message*" required></textarea>
                         </div>
                         <div class="form-group">
-                            <button type="submit" class="btn btn-info">Submit</button>
+                            <button type="submit" name="submit" class="btn btn-info">Submit</button>
                         </div>
                         
                     </form>
                 </div>
-                <div class="col-md-6 col-sm-6 col-xs-12 col-lg-6 thrive_contact_form">
-                    <p class="thrive_contact_us_address">Office Location<br><br>IMG Tower,<br> # 18, 80 feet Road,<br> 4th Block,<br>Koramangala,<br>Bengaluru - 560 034</p>
-                </div>
+                
             </div>
         </div>
     </div>
