@@ -32,7 +32,7 @@ html,body{
     background-color: #0070B6 !important;
 }
 .thrive_navbar{
-    background: #011334;
+    background: #FFFFFF;
     height: 80px;
     box-shadow: 0 1px 4px 0;
     margin-bottom: 0px;
@@ -46,7 +46,7 @@ html,body{
     margin: 10px;
 }
 .thrive_navbar #myNavbar ul li a{
-    color: #fff;
+    color: #011334;
     font-size: 16px;
     text-align: left;
     font-family: popinsregular;
@@ -59,11 +59,12 @@ html,body{
 .thrive_navbar #myNavbar .navbar-right li a{
     padding: 5px;
     border: 2px solid #E8B609;
-    border-radius: 49px;
-    width: 130px;
+    border-radius: 4px;
+    width: fit-content;
     height: 35px;
     text-align: center;
     margin: 0px;
+    background-color: #E8B609;
 }
 .thrive_navbar #myNavbar ul li a:hover,.thrive_navbar #myNavbar ul li a:focus{
     text-decoration: none;
@@ -104,16 +105,26 @@ html,body{
     right: 0;
     z-index: 9999;
 }
+.blue_back{
+    background-color: #011334;
+    width: 650px;
+    opacity: 0.75;
+    margin-left: -138px;
+    padding-left: 137px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
 .banner-text{
     display: flex;
 }
 .banner-text img{
     margin-right: 10px;
 }
-.banner-text p{
+.banner-text span{
     font-family: opensansregular;
     color: #FFFFFF;
     font-size: 20px;
+    margin-top: 12px;
 }
 .banner_text_title{
     font-family: opensansbolditalic;
@@ -166,7 +177,7 @@ html,body{
     font-family: popinssemibold;
 }
 .thrive_about .thrive_about_title{
-    margin: 10% auto;
+    margin: 16% auto;
 }
 
 .thrive_about .thrive_about_title p{
@@ -388,7 +399,7 @@ html,body{
 }
 @media (max-width:767px){
     .navbar-collapse{
-        background: #011334;
+        background: #FFFFFF;
     }
     .thrive_navbar #myNavbar {
         margin: unset;
@@ -476,10 +487,19 @@ html,body{
     .thrive_footer{
         margin-right: -15px;
     }
+    .blue_back {
+        background-color: #011334;
+        width: auto;
+        opacity: 0.75;
+        margin-left: -138px;
+        padding-left: 137px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
 }
 @media (max-width:768px){
     .thrive_navbar #myNavbar .navbar-right li a {
-        width: 124px;
+        width: fit-content;
     }
 }
 @media (max-width:1023px) and (min-width:768px){
@@ -487,7 +507,7 @@ html,body{
         margin: 0%;
     }
     .thrive_navbar #myNavbar .navbar-right li a {
-        width: 124px;
+        width: fit-content;
     }
     .thrive_banner .home_banner .home_banner_img{
         height: auto;
