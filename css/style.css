@@ -36,7 +36,7 @@ html,body{
     height: 80px;
     box-shadow: 0 1px 4px 0;
     margin-bottom: 0px;
-    opacity: 0.9;
+    /* opacity: 0.9; */
     z-index: 99999;
 }
 .thrive_navbar .container{
@@ -68,7 +68,7 @@ html,body{
 }
 .thrive_navbar #myNavbar ul li a:hover,.thrive_navbar #myNavbar ul li a:focus{
     text-decoration: none;
-    background-color: unset;
+    background-color: transparent;
     border-bottom: 1px solid #E8B609;
 }
 .thrive_footer_list > li a:hover,.thrive_footer_list > li a:focus{
@@ -80,12 +80,13 @@ html,body{
     color: #C9C6C6;
 }
 .thrive_navbar #myNavbar .thrive_left_nav{
-    margin: 0 16%;
+    margin: 0 11%;
 }
 
 .thrive_navbar #myNavbar .navbar-right li a:hover,.thrive_navbar #myNavbar .navbar-right li a:focus{
     border-bottom:unset;
     border: 2px solid #E8B609;
+    background-color: #E8B609;
 }
 
 .thrive_banner,.thrive_about{
@@ -113,6 +114,7 @@ html,body{
     padding-left: 137px;
     padding-top: 10px;
     padding-bottom: 10px;
+    margin-top: 40px;
 }
 .banner-text{
     display: flex;
@@ -177,7 +179,7 @@ html,body{
     font-family: popinssemibold;
 }
 .thrive_about .thrive_about_title{
-    margin: 16% auto;
+    margin: 20% auto;
 }
 
 .thrive_about .thrive_about_title p{
@@ -210,7 +212,7 @@ html,body{
     color: #ffffff;
 }
 .thrive_amenities{
-    margin: 5% auto;
+    margin: 7% auto;
 }
 .thrive_amenities .thrive_amenities_title{
     font-family: popinsmedium;
@@ -223,10 +225,12 @@ html,body{
 }
 .thrive_amenities .thrive_amenities_desc{
     font-family: popinsregular;
-    font-size: 20px;
+    font-size: 18px;
     color: #9B9A9A;
     text-align: center;
     margin-top: 2%;
+    padding: 15px;
+    margin-bottom: 60px;
 }
 .thrive_amenities_icon{
     width: 122px;
@@ -318,7 +322,7 @@ html,body{
     margin-left: 17px;
 }
 .thrive_caraousel{
-    margin: 5% 0;
+    margin: 7% 0;
 }
 .thrive_caraousel .item img{
     height: 450px;
@@ -329,27 +333,31 @@ html,body{
     margin-bottom: 5%;
 }
 .thrive_contact_us{
-    background-image: url(../img/h3_bkg_connect.png);
-    height: 550px;
+    /*background-image: url(../img/h3_bkg_connect.png);*/
+    height: 720px;
     background-repeat: no-repeat;
     background-size: cover;
     margin-right: unset;
 }
-.thrive_contact_us img{
-    margin: 0 auto;
-    padding: 20px 0;
+.mapouter{
+    position:relative;
+    text-align:right;
+    height:280px;
+    width:600px;
 }
+
 .thrive_contact_us .thrive_contact_us_title{
-    color:#FFFFFF;
+    color:#011334;
     font-size:35px;
     font-family: popinsmedium;
+    padding-bottom: 30px;
 }
 .thrive_contact_us_address{
     color: #FFFFFF;
-    font-size: 25px;
+    font-size: 17px;
     font-family: popinsmedium;
     border: 2px solid #d1a70e;
-    padding: 27.5px;
+    padding: 22px;
 }
 .thrive_contact_us .thrive_contact_us_desc{
     color: #FFFFFF;
@@ -375,6 +383,7 @@ html,body{
     color: #C9C6C6;
     font-size: 20px;
     font-family: popinssemibold;
+    justify-content: center;
 }
 .thrive_footer_list li{
     padding: 0 70px;
@@ -394,8 +403,22 @@ html,body{
     font-family: popinssemibold;
 }
 .thrive_contact_form{
-    background-color: #011929;
+    /*background-color: #011929;*/
     padding: 15px;
+}
+.thrive_contact_form2{
+    /*background-color: #011929;*/
+    margin-top: 15px;
+    border: 4px solid #f2efeb;
+    padding: 30px 20px;
+}
+.contactNumber{
+    background-color: transparent !important;
+    border: transparent !important;
+    color:#0070B6 !important;
+}
+.thrive_contact_us .thrive_amenities_logo{
+    margin: 0 auto;
 }
 @media (max-width:767px){
     .navbar-collapse{
@@ -444,7 +467,7 @@ html,body{
     }
     .thrive_amenities .thrive_amenities_icon_title {
         font-family: popinsmedium;
-        font-size: 12px;
+        font-size: 11px;
     }
     .thrive_navbar{
         z-index: 9999999;
@@ -470,11 +493,26 @@ html,body{
         width: 17% !important;
     }
     .thrive_contact_us{
-        background-image: url(../img/h3_bkg_connect.png);
-        height: 880px;
+        /*background-image: url(../img/h3_bkg_connect.png);*/
+        height: 1250px;
         background-repeat: no-repeat;
         background-size: cover;
         margin-right: -15px;
+    }
+    .mapouter{
+        position:relative;
+        text-align:right;
+        height:280px;
+        width:380px;
+    }
+    .gmap_canvas {
+        overflow:hidden;
+        background:none!important;
+        height:280px;
+        width:380px;
+    }
+    .map_style{
+        width: 370px !important;
     }
     .thrive_contact_us_address{
         color: #FFFFFF;
@@ -495,11 +533,15 @@ html,body{
         padding-left: 137px;
         padding-top: 10px;
         padding-bottom: 10px;
+        margin-top: 40px;
     }
 }
 @media (max-width:768px){
     .thrive_navbar #myNavbar .navbar-right li a {
         width: fit-content;
+    }
+    .title_center{
+        padding-bottom: 45px;
     }
 }
 @media (max-width:1023px) and (min-width:768px){
@@ -528,7 +570,10 @@ html,body{
         font-size: 12px;
     }
     .thrive_navbar #myNavbar ul li a {
-        margin: 15px 10px;
+        margin: 15px 5px;
+    }
+    .thrive_navbar #myNavbar ul li a{
+        font-size: 14px;
     }
     .thrive_our_price_tag{
         width: 220px;
@@ -559,11 +604,17 @@ html,body{
         border: 2px solid #d1a70e;
         padding: 27.5px;
     }
+    .map_style{
+        width: 375px;
+    }
+    .mapouter{
+        width:unset;
+    }
     
 }
 @media (max-width:1200px) and (min-width:1024px){
     .thrive_navbar #myNavbar .thrive_left_nav {
-        margin: 0 8%;
+        margin: 0 3%;
     }
     .thrive_img_desc p:last-child {
         font-size: 16px;
@@ -588,6 +639,13 @@ html,body{
     }
     .title_center{
         margin-left: 85px;
+        padding-bottom: 50px;
+    }
+    .map_style{
+        width: 500px;
+    }
+    .mapouter{
+        width:unset;
     }
 }
 @media (max-width:1280px) and (min-width:1200px){
@@ -599,6 +657,7 @@ html,body{
     }
     .title_center{
         margin-left: 55px;
+        padding-bottom: 50px;
     }
 }
 @media (min-width:1360px){
@@ -607,6 +666,26 @@ html,body{
     }
     .title_center{
         margin-left: 200px;
+        padding-bottom: 50px;
+    }
+}
+
+@media (max-width:1024px) and (min-width:769px){
+    .owl-carousel.owl-loaded{
+        margin: 0 4%;
+    }
+    .title_center{
+        margin-left: 65px;
+        padding-bottom: 50px;
+    }
+    .blue_back {
+        background-color: #011334;
+        opacity: 0.75;
+        margin-left: -138px;
+        padding-left: 137px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-top: 110px;
     }
 }
 @media(max-width:370px){
@@ -620,12 +699,13 @@ html,body{
         width: 11% !important;
     }
     .thrive_contact_us{
-        background-image: url(../img/h3_bkg_connect.png);
-        height: 900px;
+        /*background-image: url(../img/h3_bkg_connect.png);*/
+        height: 1300px;
         background-repeat: no-repeat;
         background-size: cover;
         margin-right: -15px;
     }
+    
 }
 
 .footer_social_media{
@@ -646,4 +726,72 @@ html,body{
     color: #A79F9F;
     font-size: 20px;
     padding: 0 20px;
+}
+@media(max-width:424px) and (min-width: 375px){
+    .mapouter{
+        position:relative;
+        text-align:right;
+        height:280px;
+        width:330px;
+    }
+    .gmap_canvas {
+        overflow:hidden;
+        background:none!important;
+        height:280px;
+        width:330px;
+    }
+    .map_style{
+        width: 330px !important;
+    }
+}
+@media(max-width:374px) and (min-width: 320px){
+    .mapouter{
+        position:relative;
+        text-align:right;
+        height:280px;
+        width:270px;
+    }
+    .gmap_canvas {
+        overflow:hidden;
+        background:none!important;
+        height:280px;
+        width:270px;
+    }
+    .map_style{
+        width: 270px !important;
+    }
+    .thrive_amenities .thrive_amenities_icon_title {
+        font-family: popinsmedium;
+        font-size: 9px;
+    }
+    .blue_back{
+        width: 334px;
+        margin: 0px;
+        margin-left: -30px;
+        padding: 10px;
+        margin-top: 40px;
+    }
+    
+}
+
+.form-control{
+    color: #C9B3B3;
+    border: 2px solid #C9B3B3;
+    border-radius: 0px;
+
+}
+.form-control:focus{
+    border-color: #C9B3B3;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px C9B3B3 !important;
+    box-shadow: inset 0 1px 1px C9B3B3 !important;
+}
+.privateOffice{
+    margin-top: -20px;
+}
+.contactNumberList{
+    margin-top: 13px !important;
+}
+.space_bottom{
+    padding-bottom: 250px;
 }
