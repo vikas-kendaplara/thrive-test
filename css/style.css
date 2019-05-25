@@ -107,13 +107,12 @@ html,body{
     z-index: 9999;
 }
 .blue_back{
-    background-color: #011334;
-    width: 650px;
-    opacity: 0.75;
-    margin-left: -138px;
-    padding-left: 137px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    background: rgba(1, 18, 50, 0.75);
+    width: 415px;
+    margin-left: -140px;
+    padding-left: 80px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     margin-top: 40px;
 }
 .banner-text{
@@ -125,22 +124,24 @@ html,body{
 .banner-text span{
     font-family: opensansregular;
     color: #FFFFFF;
-    font-size: 20px;
+    font-size: 15px;
     margin-top: 12px;
 }
 .banner_text_title{
     font-family: opensansbolditalic;
-    font-size:65px;
+    font-size: 53px;
     color: #E8B609;
     margin-bottom: 0;
+    margin-top: -10px;
 }
 .banner_text_title span{
     color: #FFFFFF;
 }
 .banner_text_desc{
     font-family: opensansregular;
+    font-style: italic;
     color:#FFFFFF;
-    font-size: 16px;
+    font-size: 14px;
 }
 .banner_know_more{
     width: 121px;
@@ -587,7 +588,7 @@ html,body{
         padding-left: 137px;
         padding-top: 10px;
         padding-bottom: 10px;
-        margin-top: 0px;
+        margin-top: 40px;
     }
 }
 @media (max-width:768px){
@@ -664,6 +665,44 @@ html,body{
     .mapouter{
         width:unset;
     }
+    .blue_back{
+        background: rgba(1, 18, 50, 0.75);
+        width: 460px;
+        margin-left: -140px;
+        padding-left: 177px;
+        padding-top: 0px;
+        padding-bottom: 1px;
+        margin-top: 0px;
+    }
+    .banner-text{
+        display: flex;
+    }
+    .banner-text img{
+        margin-right: 10px;
+    }
+    .banner-text span{
+        font-family: opensansregular;
+        color: #FFFFFF;
+        font-size: 12px;
+        margin-top: 12px;
+    }
+    .banner_text_title{
+        font-family: opensansbolditalic;
+        font-size: 45px;
+        color: #E8B609;
+        margin-bottom: 0;
+        margin-top: -10px;
+    }
+    .banner_text_title span{
+        color: #FFFFFF;
+    }
+    .banner_text_desc{
+        font-family: opensansregular;
+        font-style: italic;
+        color:#FFFFFF;
+        font-size: 11px;
+    }
+
     
 }
 @media (max-width:1200px) and (min-width:1024px){
@@ -733,13 +772,13 @@ html,body{
         padding-bottom: 50px;
     }
     .blue_back {
-        background-color: #011334;
-        opacity: 0.75;
         margin-left: -138px;
         padding-left: 137px;
         padding-top: 10px;
         padding-bottom: 10px;
-        margin-top: 110px;
+        margin-top: 0px;
+        background: rgba(1, 18, 50, 0.75);
+        width: 470px;
     }
 }
 @media(max-width:370px){
@@ -823,7 +862,7 @@ html,body{
         margin: 0px;
         margin-left: -30px;
         padding: 10px;
-        margin-top: 0px;
+        margin-top: 40px;
     }
     
 }
@@ -950,7 +989,7 @@ html,body{
 }
 .hvrbox .hvrbox-text {
     text-align: center;
-    font-size: 17px;
+    font-size: 16px;
     font-family: popinsregular;
     display: table;
     position: absolute;
