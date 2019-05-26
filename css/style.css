@@ -106,10 +106,20 @@ html,body{
     right: 0;
     z-index: 9999;
 }
+.banner_slider{
+    position:relative;
+    margin:0 auto;
+    top:0px;
+    left:0px;
+    width:1367px;
+    height:649px;
+    overflow:hidden
+    ;visibility:hidden;
+}
 .blue_back{
     background: rgba(1, 18, 50, 0.75);
     width: 415px;
-    margin-left: -140px;
+    margin-left: -148px;
     padding-left: 80px;
     padding-top: 5px;
     padding-bottom: 5px;
@@ -259,7 +269,7 @@ html,body{
     margin: 0 auto;
 }
 .thrive_amenities_icon:hover{
-    background: #E8B609;
+    background: #F9F0D0;
 }
 .thrive_amenities_icon img{
     margin: 0 auto;
@@ -509,7 +519,7 @@ html,body{
         font-size: 44px;
     }
     .thrive_banner .home_banner .home_banner_img {
-        height: 350px;
+        height: 650px;
     }
     .thrive_banner .home_banner .home_banner_container {
         top: 15%;
@@ -581,14 +591,27 @@ html,body{
         margin-right: -15px;
     }
     .blue_back {
-        background-color: #011334;
-        width: auto;
-        opacity: 0.75;
+        background:  rgba(1, 18, 50, 0.75); 
+        width: 470px;
         margin-left: -138px;
         padding-left: 137px;
         padding-top: 10px;
         padding-bottom: 10px;
-        margin-top: 40px;
+        margin-top: 130px;
+    }
+    .banner_slider{
+        position:relative;
+        margin:0 auto;
+        top:80px;
+        left:0px;
+        width:1367px;
+        height:649px;
+        overflow:hidden
+        ;visibility:hidden;
+    }
+    .thrive_about .thrive_about_title {
+        margin: 20% auto;
+        margin-top: 150px;
     }
 }
 @media (max-width:768px){
@@ -667,12 +690,12 @@ html,body{
     }
     .blue_back{
         background: rgba(1, 18, 50, 0.75);
-        width: 460px;
-        margin-left: -140px;
-        padding-left: 177px;
+        width: 410px;
+        margin-left: -324px;
+        padding-left: 120px;
         padding-top: 0px;
         padding-bottom: 1px;
-        margin-top: 0px;
+        margin-top: 150px;
     }
     .banner-text{
         display: flex;
@@ -701,6 +724,16 @@ html,body{
         font-style: italic;
         color:#FFFFFF;
         font-size: 11px;
+    }
+    .banner_slider{
+        position:relative;
+        margin:0 auto;
+        top:80px;
+        left:0px;
+        width:1367px;
+        height:649px;
+        overflow:hidden;
+        visibility:hidden;
     }
 
     
@@ -858,11 +891,11 @@ html,body{
         font-size: 9px;
     }
     .blue_back{
-        width: 334px;
-        margin: 0px;
-        margin-left: -30px;
+        width: 400px;
+        margin-left: -83px;
         padding: 10px;
-        margin-top: 40px;
+        margin-top: 142px;
+        padding-left: 80px;
     }
     
 }
@@ -937,10 +970,10 @@ html,body{
     /* opacity: 0.7 !important; */
 	color: #fff;
 	padding: 15px;
-	-moz-transition: all 0.4s ease-in-out 0s;
-	-webkit-transition: all 0.4s ease-in-out 0s;
-	-ms-transition: all 0.4s ease-in-out 0s;
-    transition: all 0.4s ease-in-out 0s;
+	-moz-transition: all 0.0s ease-in-out 0s;
+	-webkit-transition: all 0.0s ease-in-out 0s;
+	-ms-transition: all 0.0s ease-in-out 0s;
+    transition: all 0.0s ease-in-out 0s;
     margin-left: 14px;
 }
 .hvrbox .hvrbox-layer_top2 {
@@ -957,10 +990,10 @@ html,body{
     opacity: 0.7 !important; */
 	color: #fff;
 	padding: 15px;
-	-moz-transition: all 0.4s ease-in-out 0s;
-	-webkit-transition: all 0.4s ease-in-out 0s;
-	-ms-transition: all 0.4s ease-in-out 0s;
-    transition: all 0.4s ease-in-out 0s;
+	-moz-transition: all 0.0s ease-in-out 0s;
+	-webkit-transition: all 0.0s ease-in-out 0s;
+	-ms-transition: all 0.0s ease-in-out 0s;
+    transition: all 0.0s ease-in-out 0s;
     margin-left: 14px;
 }
 .hvrbox .hvrbox-layer_top3 {
@@ -977,10 +1010,10 @@ html,body{
     opacity: 0.7 !important; */
 	color: #fff;
 	padding: 15px;
-	-moz-transition: all 0.4s ease-in-out 0s;
-	-webkit-transition: all 0.4s ease-in-out 0s;
-	-ms-transition: all 0.4s ease-in-out 0s;
-    transition: all 0.4s ease-in-out 0s;
+	-moz-transition: all 0.0s ease-in-out 0s;
+	-webkit-transition: all 0.0s ease-in-out 0s;
+	-ms-transition: all 0.0s ease-in-out 0s;
+    transition: all 0.0s ease-in-out 0s;
     margin-left: 14px;
 }
 .hvrbox:hover .hvrbox-layer_top,
