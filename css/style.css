@@ -170,15 +170,16 @@ html,body{
 .thrive_about .thrive_about_desc .thrive_about_desc_list1{
     font-size: 16px;
     font-family: popinsregular;
-    text-align: left; 
+    text-align: justify; 
     border-bottom: 1px solid #9B9A9A;
     padding-bottom: 20px;
     margin-bottom: 15px;
+    letter-spacing: 0.7px;
 }
 .thrive_about .thrive_about_desc .thrive_about_desc_list{
     color: #011334;
     font-size: 19px;
-    text-align: left;
+    text-align: justify;
     font-family: popinsregular;
     border-bottom: 1px solid #9B9A9A;
     padding: 15px 0;
@@ -296,7 +297,7 @@ html,body{
     padding: 0;
     width: 360px;
     margin-right: 10px;
-    height: 744px;
+    height: 610px;
 }
 .thrive_our_price_tag .thrive_our_price_tag_img{
     height: auto;
@@ -415,7 +416,7 @@ html,body{
     color:#011334;
     font-size:35px;
     font-family: popinsmedium;
-    padding-bottom: 30px;
+    padding-bottom: 0px;
 }
 .thrive_contact_us_address{
     color: #FFFFFF;
@@ -484,7 +485,15 @@ html,body{
 }
 .thrive_contact_us .thrive_amenities_logo{
     margin: 0 auto;
+    margin-bottom: 30px;
 }
+.contact_msg{
+    font-size: 16px;
+    text-align: center;
+    color: green;
+    font-weight: bold;
+}
+
 @media (max-width:767px){
     .navbar-collapse{
         background: #FFFFFF;
@@ -901,7 +910,7 @@ html,body{
 }
 
 .form-control{
-    color: #C9B3B3;
+    color: #000000;
     border: 2px solid #C9B3B3;
     border-radius: 0px;
 
@@ -937,7 +946,7 @@ html,body{
 }
 .hvrbox:hover .thrive_img_desc,
 .hvrbox.active .thrive_img_desc {
-	display: none;
+    display: none;
 }
 .hvrbox,
 .hvrbox * {
@@ -975,6 +984,7 @@ html,body{
 	-ms-transition: all 0.0s ease-in-out 0s;
     transition: all 0.0s ease-in-out 0s;
     margin-left: 14px;
+    
 }
 .hvrbox .hvrbox-layer_top2 {
 	/* opacity: 0; */
