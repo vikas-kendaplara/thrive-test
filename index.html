@@ -15,7 +15,7 @@
     <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
     <!-- <link href="css/docs.theme.min.css" rel="stylesheet"> -->
   </head>
-  <body onload="showMsg();">
+  <body onload="showMsg();" id="main_page">
     <header>
         <nav class="navbar navbar-fixed-top thrive_navbar">
             <div class="container">
@@ -246,7 +246,7 @@
             <div><img data-u="image" src="img/Banner_002.jpg" /></div>
             <div><img data-u="image" src="img/Banner_003.jpg" /></div>
             <div><img data-u="image" src="img/Banner_004.jpg" /></div> -->
-        </div>
+        </div><span id="why_thrive"></span>
         <!-- Bullet Navigator -->
         <div data-u="navigator" class="jssorb051" style="position:absolute;bottom:12px;right:12px;" data-autocenter="1" data-scale="0.5" data-scale-bottom="0.75">
             <div data-u="prototype" class="i" style="width:16px;height:16px;">
@@ -266,12 +266,14 @@
                 <polyline class="a" points="4960,1920 11040,8000 4960,14080 "></polyline>
             </svg>
         </div> -->
+        
     </div>
     <!-- #endregion Jssor Slider End -->
 
 
-
+    
     <div class="row thrive_about" id="thrive_about">
+    
         <div class="container" >
             <div class="col-md-12 col-sm-12 col-xs-12 col-lg-12">
                 <div class="col-md-6 thrive_about_title">
@@ -284,7 +286,6 @@
                             Thrive a community creates workspaces for the evolving economy, 
                             the flexibility of thrive designed to encourage productivity and facilitate 
                             connections between like-minded professionals. 
-                            <span id="why_thrive"></span>
                             Open yourself and your business to new opportunities.
                             Our balanced work environment, elegantly designed spaces, member amenities, 
                             in-house cafeteria and cost-effective solutions that fit everyone’s budget.
@@ -378,13 +379,13 @@
                         <div class="thrive_amenities_icon">
                             <img src="img/game-controller.png" class="img-responsive" alt="thrive">
                         </div>
-                        <p class="thrive_amenities_icon_title">recreational activities<br> (foosball)</p> 
+                        <p class="thrive_amenities_icon_title">Recreational activities<br> (foosball)</p> 
                     </div>
                     <div class="col-md-3 col-lg-3 col-sm-3 col-xs-6">
                         <div class="thrive_amenities_icon">
                             <img src="img/table.png" class="img-responsive" alt="thrive">
                         </div>
-                        <p class="thrive_amenities_icon_title">conference <br> & meeting rooms</p>
+                        <p class="thrive_amenities_icon_title">Conference <br> & meeting rooms</p>
                     </div>
                 </div>
             </div>
@@ -405,7 +406,8 @@
                     
                     <div class="col-md-3 col-lg-3 col-sm-3 col-xs-6">
                         <div class="thrive_amenities_icon">
-                            <img src="img/dome.png" class="img-responsive" alt="thrive">
+                            <img src="img/dome.png" style="margin: 0 auto;padding: 42px 0;" 
+                            class="img-responsive" alt="thrive">
                         </div>
                         <p class="thrive_amenities_icon_title">Centralized AC & CCTV</p> 
                     </div>
@@ -531,10 +533,10 @@
         </div>
         <span id="thrive_contact_us"></span>
     </div>
-    <div class="row thrive_contact_us" >
+    <div class="row thrive_contact_us" id="thrive_contact_us" >
         <div class="container">
-            <img src="img/2.png" class="img-responsive thrive_amenities_logo" alt="thrive">
             <p class="text-center thrive_contact_us_title">Contact us</p>
+            <img src="img/2.png" class="img-responsive thrive_amenities_logo" alt="thrive">
             <!--<p  class="text-center thrive_contact_us_desc">Subscribe to our e-mail list and stay up-to-date with all our news</p>-->
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ContactUs_top">
                 <div class="col-md-7 col-sm-7 col-xs-12 col-lg-7 thrive_contact_form">
@@ -551,32 +553,39 @@
                             </tr>
                             <tr>
                                 <td><strong>Phone Number:</strong></td>
-                                <td>+91 72040 43506</td>
+                                <td>+91 72040 43506 , +91 80953 35298</td>
                             </tr>
                             <tr>
                                 <td><strong>Email Address:</strong></td>
-                                <td>coworking@thrice.com</td>
+                                <td>info@thrivecoworking.in</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
                 <div class="col-md-5 col-sm-5 col-xs-12 col-lg-5 thrive_contact_form2">
+                    <div id='contact_msg'>
+                    <?php 
+                        if($result!="empty"){
+                            echo "<p class='contact_msg'>".$result."</p>";
+                        }
+                    ?>
+                    </div>
                     <p style="font-size: 18px;text-align: center;padding-bottom: 10px;">We are excited to show you around. Walk-in directly or schedule a tour with our community team.</p>
-                    <form action="" method="post">
+                    <form action="" method="post" id="contact_form">
                         <div class="form-group">
-                            <input type="text" class="form-control" name="uname" placeholder="Name*" required>
+                            <input type="text" class="form-control" name="uname" id="uname" placeholder="Name*" required>
                         </div>
                         <div class="form-group">
-                            <input type="email" class="form-control" name="email" placeholder="Email*" required>
+                            <input type="email" class="form-control" name="email" id="email" placeholder="Email*" required>
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control" name="mobileno" placeholder="Mobile Number*" required>
+                            <input type="text" class="form-control" name="mobileno" id="mobileno" placeholder="Mobile Number*" required>
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control" name="subject" placeholder="Subject*" required>
+                            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject*" required>
                         </div>
                         <div class="form-group">
-                            <textarea class="form-control" name="msg" placeholder="Message*" required></textarea>
+                            <textarea class="form-control" name="msg" id="msg" placeholder="Message*" required></textarea>
                         </div>
                         <div class="form-group">
                             <button type="submit" name="submit" class="btn btn-info">Schedule a Visit</button>
@@ -642,5 +651,41 @@
             }
         }
     })
+
+    
+    $(document).ready(function(){
+        // Set form variable
+        var form = $('#contact_form');
+        
+        // Hijack form submit
+        form.submit(function(event){
+            // Set username variable
+            var uname1 = $('#uname').val();
+            var email1 = $('#email').val(); 
+            var mobileno1 = $('#mobileno').val(); 
+            var subject1 = $('#subject').val(); 
+            var msg1 = $('#msg').val();  
+            var form_msg = '<?php echo $result; ?>';
+          
+         
+            $.post('', {
+                uname: uname1,
+                email: email1,
+                mobileno: mobileno1,
+                subject: subject1,
+                msg: msg1
+                }           
+            );
+
+
+            window.location.href="index.php#thrive_contact_us";
+            window.reload();
+    
+            // Prevent default form action
+            event.preventDefault();
+
+        });
+
+      });
 
 </script>
