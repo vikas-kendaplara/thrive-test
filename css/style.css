@@ -475,7 +475,7 @@ html,body{
 .thrive_contact_form2{
     /*background-color: #011929;*/
     margin-top: 15px;
-    border: 4px solid #f2efeb;
+    border: 1px solid #f2efeb;
     padding: 30px 20px;
 }
 .contactNumber{
@@ -947,6 +947,7 @@ html,body{
 .hvrbox:hover .thrive_img_desc,
 .hvrbox.active .thrive_img_desc {
     display: none;
+    /* transition: all 0.5s ease-in-out 0s; */
 }
 .hvrbox,
 .hvrbox * {
